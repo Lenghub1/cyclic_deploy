@@ -10,6 +10,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
+    "start":"node --loader esm-module-alias/loader --no-warnings ./src/server.js",
     "dev": "nodemon --loader esm-module-alias/loader --no-warnings ./src/server.js",
     "lint": "eslint ./src/ --ignore-path .gitignore --ignore-pattern internals/scripts",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
